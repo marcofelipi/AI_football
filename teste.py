@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 # Load a model
-model = YOLO("runs_um/detect/train2/weights/best.pt")  # pretrained YOLO11n model
+model = YOLO("runs/detect/train2/weights/best.pt")  # pretrained YOLO11n model
 
 # Run batched inference on a list of images
 results = model(["train/images/1-fps-2_00045_jpeg_jpg.rf.bf71b7012ac75a2716ecc3e0a2bddf3e.jpg"])  # return a list of Results objects
